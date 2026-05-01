@@ -41,15 +41,15 @@
       width: 90px;
       height: 90px;
       border-radius: 50%;
-      background: rgba(255,255,255,0.2);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2rem;
-      font-weight: 800;
-      color: #fff;
+      overflow: hidden;
       flex-shrink: 0;
       border: 3px solid rgba(255,255,255,0.4);
+    }
+
+    .cv-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     .cv-header-info h1 {
@@ -295,7 +295,9 @@
 
     <!-- Header -->
     <div class="cv-header">
-      <div class="cv-avatar">ST</div>
+      <div class="cv-avatar">
+        <img src="./profile-photo.jpg" alt="Sisay Temesgen" />
+      </div>
       <div class="cv-header-info">
         <h1>Sisay Temesgen</h1>
         <p class="role">Full Stack Developer &amp; AI / Machine Learning Enthusiast</p>
@@ -404,8 +406,7 @@
             <p>
               A full-featured web application showcasing Ethiopia's most breathtaking tourist
               destinations. Features destination listings, detailed location pages, rich imagery,
-              and a fully responsive interface optimized for all devices. Built with the MERN stack
-              and deployed on Render.
+              and a fully responsive interface optimized for all devices. Built with the MERN stack.
             </p>
             <div class="tag-list" style="margin-bottom:0.5rem">
               <span class="tag">React</span>
@@ -419,26 +420,17 @@
           </div>
 
           <div class="project-entry">
-            <h4>📋 Student Online Registration System</h4>
+            <h4>🌐 Personal Portfolio Website</h4>
             <p>
-              Designed and documented system requirements for an online student registration
-              platform. Focused on UI/UX design and structured project documentation.
-            </p>
-            <div class="tag-list">
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
-            </div>
-          </div>
-
-          <div class="project-entry">
-            <h4>💬 React Chat Application</h4>
-            <p>
-              Built a real-time chat interface using React components and state management,
-              demonstrating component architecture and dynamic UI updates.
+              A modern, fully responsive personal portfolio built with React and Vite. Features
+              smooth animations with Framer Motion, multiple sections including About, Skills,
+              Projects and Contact, a downloadable CV, and a professional international design.
             </p>
             <div class="tag-list">
               <span class="tag">React</span>
-              <span class="tag">JavaScript</span>
+              <span class="tag">Vite</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">Framer Motion</span>
             </div>
           </div>
         </div>
